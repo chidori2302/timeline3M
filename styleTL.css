@@ -1,13 +1,29 @@
 body{
     margin: 0px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #FFDAB9;
     width: 100%; height: 100%;
-}    
+}  
+
+.text{
+    width: 20rem;
+    height: 3rem;
+    margin-top: 5rem;
+    margin-left: 5rem;
+}
+.checkbox{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: 5rem;
+}
+
+select{
+    width: 3rem;
+    height: 2rem;
+}
 h1{
     padding: 100px;
     text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 60px;
     color:#ffffff;
     font-weight: 1000;
@@ -24,8 +40,9 @@ ul {
 li{
     color: #ffffff;
     background-color: #8B4513;
-    width: 300px; height: 150px;
+    width: 300px; height: 200px;
     font-size:medium;
+    opacity: 0;
 }
 
 .line{
@@ -38,7 +55,7 @@ li{
 }
 
 li:nth-child(odd){
-    animation: runLeft 1s;
+    
     margin-left: 52%;
     padding: 10px 20px 10px 70px;
     clip-path: polygon(
@@ -53,7 +70,7 @@ li:nth-child(odd){
 }
 
 li:nth-child(even){
-    animation: runRight 1s;
+    
     margin-left: 48%;
     transform: translateX(-100%);
     text-align: right;
@@ -96,4 +113,13 @@ footer{
     100% {opacity: 100%;
         scale: 100%;
         margin-left: 48%;}
+}
+
+.activeL{
+    animation: runLeft 1s;
+    opacity: 100%;
+}
+.activeR{
+    animation: runRight 1s;
+    opacity: 100%;
 }
